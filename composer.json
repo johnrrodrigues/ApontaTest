@@ -1,0 +1,24 @@
+{
+    "name": "apontatest/apontatest",
+    "description": "Projeto de estudo de testes automatizados em PHP com Pest.",
+    "type": "project",
+    "require": {
+        "php": "~8.4.0",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*"
+    },
+    "require-dev": {
+        "pestphp/pest": "^5.0"
+    },
+    "autoload": {
+        "files": ["src/jornada.php"]
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest"
+    }
+}
